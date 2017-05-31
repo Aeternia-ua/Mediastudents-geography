@@ -1,0 +1,169 @@
+[{
+		"type": "Feature",
+		"properties": {
+			"name": "Ганна Цупко, Анна Стукало",
+			"city": "Запоріжжя",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.139567, 47.838800]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Вероніка Тихонова",
+			"city": "Керч",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [36.468293, 45.357314]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Аліна Смутко",
+			"city": "Полтава",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [34.551417, 49.588267]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Олександра Давиденко, Богдана Потішка, Соломія Савка, Олег Твердь",
+			"city": "Львів",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [24.029717, 49.839683]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Анна Романдаш",
+			"city": "Новий Розділ",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [24.129058, 49.474504]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Євгенія Резниченко",
+			"city": "Донецьк",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [37.802850, 48.015883]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Наталія Патрікєєва",
+			"city": "Христинівка",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [29.973895, 48.811721]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ірина Мацькова",
+			"city": "Летичів",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [27.624225, 49.385028]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Данило Кушпета",
+			"city": "Млинів",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [25.611077, 50.507764]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Єлизавета Кузнєцова",
+			"city": "Рівне",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [26.251617, 50.619900]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Руслан Герасименко",
+			"city": "Мелітополь",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.358700, 46.855022]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Оксана Ажнюк",
+			"city": "Стрий",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [23.843134, 49.265608]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Наталія Ревко, Веніамін Умнов",
+			"city": "Одеса",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [30.723310, 46.482526]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Марія Пасельська",
+			"city": "Новий Уренгой",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [76.656352, 66.095686]
+		}
+	}
+]
