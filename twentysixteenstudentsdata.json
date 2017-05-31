@@ -1,0 +1,210 @@
+[{
+		"type": "Feature",
+		"properties": {
+			"name": "Валерія Аркашова",
+			"city": "Мирноград",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [37.270004, 48.296212]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Микита Богданов",
+			"city": "Запоріжжя",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.139567, 47.838800]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Марія Клокова",
+			"city": "Марганець",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [34.610520, 47.648924]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"name": "Аліна Журбенко",
+			"city": "Нижня Сироватка",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [34.837894, 50.784462]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Анастасія Івашина",
+			"city": "Богданівка",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [30.916430, 50.627377]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ревіде Зіятдінова",
+			"city": "Старий Крим",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.086372, 45.027423]
+		}
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ліза Александрович, Ольга Ліхобабіна, Меланія-Марія Подоляк, Катерина Маруняк, Каріна Степанчикова",
+			"city": "Львів",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [24.029717, 49.839683]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Анна Дорожко",
+			"city": "Полтава",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [34.551417, 49.588267]
+		}
+
+	},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ілля Ігнатов",
+			"city": "Гливаха",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [30.289281, 50.262316]
+		}
+		
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Єлизавета Панченко",
+			"city": "Світловодськ",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [33.228469, 49.049684]
+		}
+		
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Кристина Поворозник",
+			"city": "Київ",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [30.523400, 50.450100]
+		}
+		
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Тетяна Семейко",
+			"city": "Миколаїв",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [31.994583, 46.975033]
+		}
+		
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Марія Сенишин",
+			"city": "Стрий",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [23.843134, 49.265608]
+		}
+		
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Олександр Тирон",
+			"city": "Одеса",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [30.723310, 46.482526]
+		}
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ревіде Зіятдінова",
+			"city": "Старий Крим",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.086372, 45.027423]
+		}
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Катерина Фірсова",
+			"city": "Донецьк",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [37.802850, 48.015883]
+		}
+		},
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Анатолій Шульгат",
+			"city": "Павлоград",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [35.903257, 48.529448]
+		}
+
+	}
+]
