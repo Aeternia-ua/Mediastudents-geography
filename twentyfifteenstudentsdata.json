@@ -1,0 +1,160 @@
+[{
+	"type": "Feature",
+	"properties": {
+		"name": "Анна Яценко",
+		"city": "Ічня",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [32.397489, 50.857956]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Олена Бондар",
+		"city": "Оржів",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [26.116395, 50.742978]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Маріанна Ластовецька",
+		"city": "Львів",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [24.029717, 49.839683]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Назарій Мочула",
+		"city": "Тернопіль",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [25.594767, 49.553517]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Ніярє Шевкієва",
+		"city": "Крим",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [34.499727, 45.345303]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Дмитро Василюк",
+		"city": "Яворів",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [23.388522, 49.938089]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Валентина Семеніхіна",
+		"city": "Одеса",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [30.723310, 46.482526]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Вікторія Димарчук, Ярослава Савош",
+		"city": "Луцьк",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [25.325383, 50.747233]
+	}
+
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Анна Малахова",
+		"city": "Мукачево",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [22.711711, 48.449306]
+	}
+
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Владислав Рудий",
+		"city": "Олександрія",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [33.096788, 48.663270]
+	}
+
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Ярослава Григорчук",
+		"city": "Долинська",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [32.765868, 48.113256]
+	}
+
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Анастасія Мальцева",
+		"city": "Кривий Ріг",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [33.391783, 47.910483]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Роман Скрипник",
+		"city": "Дніпро",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [35.046183, 48.464717]
+	}
+}, {
+	"type": "Feature",
+	"properties": {
+		"name": "Олександра Сіммуль",
+		"city": "Івано-Франківськ",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [24.711117, 48.922633]
+	}
+
+}]
