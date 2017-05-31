@@ -1,0 +1,10 @@
+#mapid { height: 500px; 
+}
+.customTooltip {
+ background: green;
+      border: 2px solid cyan;
+}
+.leaflet-tooltip-bottom.customTooltip::before {
+  border-bottom-color: transparent;
+  border-color: transparent;
+}
