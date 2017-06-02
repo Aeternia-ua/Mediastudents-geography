@@ -3,6 +3,7 @@ var mymap = L.map('mapid', {
  center: [48.3794, 31.1656],
   zoom: 6,
   minZoom: 3,
+  maxZoom: 20
 });
 
 // OpenStreetMap tile layer url //'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
@@ -98,7 +99,7 @@ var layerOfStudents2016 = [{
 		},
 		"geometry": {
 			"type": "Point",
-			"coordinates": [30.916430, 50.627377]
+			"coordinates": [36.046944, 47.105833]
 		}
 	},
 	{
@@ -116,7 +117,7 @@ var layerOfStudents2016 = [{
 	{
 		"type": "Feature",
 		"properties": {
-			"name": "Ліза Александрович, Ольга Ліхобабіна, Меланія-Марія Подоляк, Катерина Маруняк, Каріна Степанчикова",
+			"name": "Ліза Александрович, Меланія-Марія Подоляк, Катерина Маруняк, Каріна Степанчикова",
 			"city": "Львів",
 			"show_on_map": true
 		},
@@ -226,6 +227,19 @@ var layerOfStudents2016 = [{
 		"geometry": {
 			"type": "Point",
 			"coordinates": [37.802850, 48.015883]
+		}
+    
+    },
+	{
+		"type": "Feature",
+		"properties": {
+			"name": "Ольга Ліхобабіна",
+			"city": "Луганськ",
+			"show_on_map": true
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [39.307815, 48.574041]
 		}
 		},
 	{
@@ -695,6 +709,20 @@ var layerOfStudents2013 = [{
 	}
 ];
 
+var khutorivka =  [{
+	"type": "Feature",
+	"properties": {
+		"name": "Магістерська програма з медіакомунікацій",
+		"city": "Хуторівка, 35а",
+		"show_on_map": true
+	},
+	"geometry": {
+		"type": "Point",
+		"coordinates": [24.037251, 49.801154]
+	}
+}
+  ];
+
 var geojsonMarkerOptions = {
 //    radius: 8,
     fillColor: "#ff7800",
@@ -703,6 +731,10 @@ var geojsonMarkerOptions = {
     opacity: 1,
     fillOpacity: 0.8
 };
+
+var khutorivkaLocation = L.geoJSON(khutorivka, {
+    onEachFeature: onEachFeature,
+}).addTo(mymap);
 
 var students2016Map = L.geoJSON(layerOfStudents2016, {
     style: customStyle,
