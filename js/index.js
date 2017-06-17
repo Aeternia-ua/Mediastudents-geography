@@ -7,13 +7,15 @@ var mymap = L.map('mapid', {
 });
 
 // OpenStreetMap tile layer url goes here
-var mapStyle = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+//var mapStyle = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
+var mapStyle = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png', {
+//var mapStyle = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png', {
     attribution: '<a href="http://openstreetmap.org">OpenStreetMap</a> Contributors & <a href="http://stamen.com">Stamen Design</a>.',
     maxZoom: 20,
     minZoom: 3,
 }).addTo(mymap);
 
-//Adding city labels
+//Adding city names - feature for the tiles which are lacking of lables
 mymap.createPane('labels');
 var positronLabels = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png', {
     pane: 'labels'
@@ -30,17 +32,17 @@ var customStyle = {
 function onEachFeature(feature, layer) {
     // does this feature have a property named name?
     if (feature.properties && feature.properties.name) {
-        layer.bindPopup(feature.properties.name);
+        layer.bindPopup(feature.properties.name + "<br/>" + feature.properties.city + "<br/>" + "<img src=" + feature.properties.icon_url + " width=80 height=80/>");
     }
 
     // To attach city name tooltip to each geomarker
-    if (feature.properties && feature.properties.city) {
-        layer.bindTooltip(feature.properties.city, {
-            className: 'customTooltip',
-            permanent: true,
-            direction: 'bottom',
-        });
-    }   
+   // if (feature.properties && feature.properties.city) {
+  //      layer.bindTooltip(feature.properties.city, {
+  //          className: 'customTooltip',
+ //           permanent: true,
+ //           direction: 'bottom',
+ //       });
+//    }   
     //TODO: To add polylines to the marker
 //    if (feature.properties && feature.properties.previous_uni && feature.geometry && feature.geometry.coordinates) {
 //     layer.bindPolyline(feature.geometry.coordinates, feature.properties.previous_uni) 
@@ -52,6 +54,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Валерія Аркашова",
             "city": "Мирноград",
+          "icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/Arkashova-1-e1471875326443-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -63,6 +66,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Микита Богданов",
             "city": "Запоріжжя",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/mk_bogdanov-e1471887881693-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -74,6 +78,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Марія Клокова",
             "city": "Марганець",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/Klokova-e1471875607251-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -85,6 +90,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Аліна Журбенко",
             "city": "Нижня Сироватка",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/WBy0e1Uk6rM-e1471177441956-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -97,6 +103,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Анастасія Івашина",
             "city": "Богданівка",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/14012600_1215028351881818_2117624099_o1-e1471258198105-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -109,6 +116,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Ревіде Зіятдінова",
             "city": "Старий Крим",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/HqakCzLyRKM-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -121,6 +129,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Ліза Александрович",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/IMG_8072-e1471388652263-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -134,6 +143,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Меланія-Марія Подоляк",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/DSCF3565-e1471887509148-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -147,6 +157,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Катерина Маруняк",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/IMG_3761-e1471177629921-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -160,6 +171,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Каріна Степанчикова",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/stepanchykova-e1473942567758-100x100.png?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -173,6 +185,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Анна Дорожко",
             "city": "Полтава",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/V9Bs4zRzdFg-e1471886887140-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -186,6 +199,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Ілля Ігнатов",
             "city": "Гливаха",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/Photo1-e1472469445231-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -199,6 +213,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Єлизавета Панченко",
             "city": "Світловодськ",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/IMG_2439-e1471622031487-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -212,6 +227,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Кристина Поворозник",
             "city": "Київ",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/14111971_667793490036481_120435458_n-e1471983257902-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -225,6 +241,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Тетяна Семейко",
             "city": "Миколаїв",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/profajl-foto-e1471876650721-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -238,6 +255,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Марія Сенишин",
             "city": "Стрий",
+			"icon_url": "https://raw.githubusercontent.com/Aeternia-ua/Mediastudents-geography/master/img/2016/3-e1471605774663-100x100.jpg",
             "show_on_map": true
         },
         "geometry": {
@@ -251,6 +269,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Олександр Тирон",
             "city": "Одеса",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/O.Tyron_-e1471887263291-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -263,6 +282,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Катерина Фірсова",
             "city": "Донецьк",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/FB_IMG_1472131349069-001-e1472134267318-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -276,6 +296,7 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Ольга Ліхобабіна",
             "city": "Луганськ",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/DSC_1203-e1471875918993-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -288,6 +309,8 @@ var layerOfStudents2016 = [{
         "properties": {
             "name": "Анатолій Шульгат",
             "city": "Павлоград",
+			"icon_url": "https://raw.githubusercontent.com/Aeternia-ua/Mediastudents-geography/master/img/2016/12308082_531121700383512_1636319093865072537_o-e1472218696256-100x100.jpg",
+			
             "show_on_map": true
         },
         "geometry": {
@@ -303,6 +326,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Анна Яценко",
             "city": "Ічня",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6583-e1475569236855-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -314,6 +338,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Олена Бондар",
             "city": "Оржів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_7371-e1475569482749-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -324,6 +349,8 @@ var layerOfStudents2015 = [{
         "type": "Feature",
         "properties": {
             "name": "Маріанна Ластовецька",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6520-e1475569824924-100x100.jpg?raw=true",
+
             "city": "Львів",
             "show_on_map": true
         },
@@ -336,6 +363,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Назарій Мочула",
             "city": "Тернопіль",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6621-e1475523400101-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -347,6 +375,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Ніярє Шевкієва",
             "city": "Крим",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6597-e1475523178515-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -358,6 +387,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Дмитро Василюк",
             "city": "Яворів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6535-e1475523102911-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -369,6 +399,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Валентина Семеніхіна",
             "city": "Одеса",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/profil.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -380,6 +411,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Вікторія Димарчук",
             "city": "Луцьк",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6553-e1475569931921-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -393,6 +425,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Ярослава Савош",
             "city": "Луцьк",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_7378-e1475524147866-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -406,6 +439,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Анна Малахова",
             "city": "Мукачево",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6530-e1475575622974-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -418,6 +452,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Владислав Рудий",
             "city": "Олександрія",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6587-e1475529069279-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -430,6 +465,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Ярослава Григорчук",
             "city": "Долинська",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_65731-e1475522596383-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -442,6 +478,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Анастасія Мальцева",
             "city": "Кривий Ріг",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6570-e1475570256371-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -453,6 +490,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Роман Скрипник",
             "city": "Дніпро",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_6622-e1475523863919-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -464,6 +502,7 @@ var layerOfStudents2015 = [{
         "properties": {
             "name": "Олександра Сіммуль",
             "city": "Івано-Франківськ",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2015/IMG_7409-e1475568900898-100x100.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -479,6 +518,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Ганна Цупко",
             "city": "Запоріжжя",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/tsupko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -490,6 +530,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Анна Стукало",
             "city": "Запоріжжя",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/stukalo.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -502,6 +543,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Вероніка Тихонова",
             "city": "Керч",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/tykhonova.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -514,6 +556,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Аліна Смутко",
             "city": "Полтава",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/smutko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -525,6 +568,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Олександра Давиденко",
             "city": "Львів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/davydenko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -537,6 +581,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Богдана Потішка",
             "city": "Львів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/potishka.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -549,6 +594,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Соломія Савка",
             "city": "Львів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/savka.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -561,6 +607,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Олег Твердь",
             "city": "Львів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/tverd.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -573,6 +620,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Анна Романдаш",
             "city": "Новий Розділ",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/romandash.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -585,6 +633,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Євгенія Резниченко",
             "city": "Донецьк",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/reznychenko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -597,6 +646,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Наталія Патрікєєва",
             "city": "Христинівка",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/patrikeeva.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -610,6 +660,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Ірина Мацькова",
             "city": "Летичів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/matskova.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -623,6 +674,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Данило Кушпета",
             "city": "Млинів",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/kushpeta1.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -636,6 +688,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Єлизавета Кузнєцова",
             "city": "Рівне",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/Liza80x802.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -649,6 +702,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Руслан Герасименко",
             "city": "Мелітополь",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/herasymenko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -661,6 +715,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Оксана Ажнюк",
             "city": "Стрий",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/Azhniuk.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -672,6 +727,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Наталія Ревко",
             "city": "Одеса",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/revko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -684,6 +740,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Христина Малиш",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/malysh.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -696,6 +753,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Веніамін Умнов",
             "city": "Одеса",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/umnov.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -708,6 +766,7 @@ var layerOfStudents2014 = [{
         "properties": {
             "name": "Марія Пасельська",
             "city": "Новий Уренгой",
+						"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2014/paselska.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -722,6 +781,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Вікторія Гайбонюк",
             "city": "Рівне",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/hajboniuk.jpg?raw=true",
             "show_on_map": true,
             "previous_uni": [35.139567, 47.838800]
         },
@@ -735,6 +795,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Анастасія Онопрійчук",
             "city": "Рівне",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/onoprijchuk.jpg?raw=true",
             "show_on_map": true,
             "previous_uni": [35.139567, 47.838800]
         },
@@ -749,11 +810,12 @@ var layerOfStudents2013 = [{
             "name": "Карина Лазарук",
             "city": "Київ",
             "show_on_map": true,
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/lazaruk.jpg?raw=true",
             "previous_uni": [50.450100, 30.523400]
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [26.251617, 50.619900]
+            "coordinates": [30.523400, 50.450100]
         }
     },
     {
@@ -762,6 +824,7 @@ var layerOfStudents2013 = [{
             "name": "Юрій Кульчинський",
             "city": "Рівне",
             "show_on_map": true,
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/kulchynsky1.jpg?raw=true",
             "previous_uni": [35.139567, 47.838800]
         },
         "geometry": {
@@ -774,6 +837,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Галина Герасим",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/herasym.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -787,6 +851,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Надія Михалевич",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/mykhalevych.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -799,6 +864,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Мар’яна Мазурак",
             "city": "Львів",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/mazurak.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -811,6 +877,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Яна Машкова",
             "city": "Корсунь-Шевченківський",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/mashkova.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -822,6 +889,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Олеся Малюванчук",
             "city": "Івано-Франківськ",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/maluvanchuk.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -834,6 +902,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Софія Кочмар",
             "city": "Бузьк",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/kochmar.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -846,6 +915,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Вікторія Ільченко",
             "city": "Випасне",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/ilchenko.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -858,6 +928,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Ігор Фещенко",
             "city": "Сміла",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/feschenko1.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -871,6 +942,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Марта Дацюк",
             "city": "Сокаль",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/datsyuk.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -884,6 +956,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Богдана Рущак",
             "city": "Буштино",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/rushchak.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -896,6 +969,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Анна Казак",
             "city": "Запоріжжя",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/kazak.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -908,6 +982,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Джессіка Пачеко-Семенюк",
             "city": "Savannah",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/pacheko-1.jpg?raw=true",
             "show_on_map": true
         },
         "geometry": {
@@ -920,6 +995,7 @@ var layerOfStudents2013 = [{
         "properties": {
             "name": "Каріна Фурса",
             "city": "Богданівка",
+			"icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2013/fursa.jpg?raw=true",
             "show_on_map": true,
             "previous_uni": [35.139567, 47.838800]
         },
@@ -956,7 +1032,7 @@ var univercities = [{
 ];
 //Geomarker styles
 var geojsonMarkerOptions = {
-    radius: 8,
+    radius: 9,
     fillColor: "#ff7800",
     color: "#000",
     weight: 1,
