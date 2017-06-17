@@ -104,14 +104,22 @@ transition: all 0.3s ease-out;
   border-color: transparent;
 }
 
-.legend {
-    line-height: 18px;
-    color: #555;
-}
-.legend i {
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-right: 8px;
-    opacity: 0.7;
-}
+.marker-cluster-small {
+	background-color: rgba(198, 232, 249, 0.6) !important;
+	}
+.marker-cluster-small div {
+	background-color: rgba(108, 177, 211, 0.6) !important;
+	}
+.marker-cluster-medium {
+	background-color: rgba(255, 177, 177, 0.6) !important;
+	}
+.marker-cluster-medium div {
+	background-color: rgba(175, 26, 26, 0.6) !important; 
+	}
+
+.marker-cluster-large {
+	background-color: rgba(198, 232, 249, 0.6) !important;
+	}
+.marker-cluster-large div {
+	background-color: rgba(108, 177, 211, 0.6) !important;
+	}
