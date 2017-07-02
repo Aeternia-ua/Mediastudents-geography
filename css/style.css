@@ -6,8 +6,9 @@
  width:420px;  
 }
 #box-dynamic {
-  width:420px;
-  line-height: 25px;
+height: 78px;  
+ width: 420px;
+line-height: 5px;  
    background: rgba(0,0,0, 0.5);
    float: left;
   position: absolute;
@@ -20,8 +21,8 @@ bottom: 0;
 transition: all 0.3s ease-out;
 }
 #box-dynamic.minimize {
-height: 50px;  
-line-height: 5px;
+  width: 110px;
+  height: 110px;
 }
 
 #box-dynamic h1 {
@@ -38,15 +39,15 @@ transition: all 0.3s ease-out;
 }
 
 #box-dynamic.minimize h1{
- font-size: 20px;  
- text-align: center;
+  font-size:0px;
+  visibility: hidden;
 }
 
 #box-dynamic p {
   color:#ccc;
-  font-size:15px;
-  line-height:1.4;
-  margin-left: 5px;
+   font-size:15px; 
+  line-height:1.2;
+  margin-left: 4px;
   font-family: 'Roboto Condensed', sans-serif;
 -ms-transition: all 0.3s ease-out;
 -moz-transition: all 0.3s ease-out;
@@ -55,11 +56,14 @@ transition: all 0.3s ease-out;
 transition: all 0.3s ease-out;
 }
 #box-dynamic.minimize p {
- font-size:0px; 
+  font-size:0px;
+  visibility: hidden;
 }
 #box-dynamic small {
-  color:#ccc;
-  font-size:11px;
+ color:#ccc;
+ font-size:10px; 
+ margin-right: 5px;
+  float: right;
   font-family: 'Roboto Condensed', sans-serif;
 margin-left: 5px;
 margin-top: 0;
@@ -70,16 +74,14 @@ margin-top: 0;
 transition: all 0.3s ease-out;
 }
 #box-dynamic.minimize small {
- font-size:10px;
- margin-right: 5px;
-  float: right;
-}
-
-#box-dynamic img {
-  float:left;
-  width:0;
-  height:0;
+  font-size:0px;
   visibility: hidden;
+}
+#box-dynamic img {
+  width:50px;
+  height:50px;
+  visibility: visible;
+  float: left;
   -ms-transition: all 0.3s ease-out;
 -moz-transition: all 0.3s ease-out;
 -webkit-transition: all 0.3s ease-out;
@@ -88,10 +90,11 @@ transition: all 0.3s ease-out;
 }
 
 #box-dynamic.minimize img {
-  float:left;
-  width:50px;
-  height:50px;
-  visibility: visible;
+
+margin-top: 5px;
+margin-right: 5px;  
+  width:100px;
+  height:100px;
 }
 
 .leaflet-tooltip.customTooltip {
