@@ -40,6 +40,293 @@ function onEachFeature(feature, layer) {
     //    }
 }
 //TODO - move data to external geojson
+
+var layerOfStudents2017 = [{
+        "type": "Feature",
+        "properties": {
+            "name": "Еліна Андрусь",
+            "city": "Мукачево",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IMG_60761-e1504767909910-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [22.711711, 48.449306]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "name": "Богдана Антонова",
+            "city": "Київ",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/Antonova-e1504768652592-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [30.523400, 50.450100]
+        }
+    },  {
+        "type": "Feature",
+        "properties": {
+            "name": "Максим Бадік",
+            "city": "Львів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/foto-Badik-e1504771034892-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Крістіна Віслянська",
+            "city": "Львів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/20747518_1834485856868437_1695465886_o-e1504770786565-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ірина Волощак",
+            "city": "Трускавець",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/1-e1504770159536-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [23.510558, 49.276030]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ліза Александрович",
+            "city": "Львів",
+            "icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/IMG_8072-e1471388652263-100x100.jpg?raw=true",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Яромир Делікатний",
+            "city": "Львів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IMG_20160307_133418-e1504774808554-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Тереза Дичка",
+            "city": "Калуш",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/17038592_1282886148471316_8194670224091762704_o-e1504769146870-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.395038, 49.041426]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Євгеній Домашин",
+            "city": "Полтава",
+            "icon_url": "",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [34.551417, 49.588267]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ярослава Друца",
+            "city": "Чернівці",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IMG_3322-e1504768903243-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [25.935837, 48.292079]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Дарія Зубрицька",
+            "city": "Львів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/unnamed-e1504774143166-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Вікторія Кадевська",
+            "city": "Львів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IMG_3555-e1504769700574-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.029717, 49.839683]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Валентина Королевська",
+            "city": "Хмельницький",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/korolevska-e1504774684273-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [26.987133, 49.422983]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Марія Кочуренко",
+            "city": "Миколаїв",
+            "icon_url": "",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [31.994583, 46.975033]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Катерина Лопушанська",
+            "city": "Борислав",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/CV-e1504768377870-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [23.427186, 49.291247]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ірина Павленко",
+            "city": "Одеса",
+            "icon_url": "",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [30.723310, 46.482526]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Валерія Пінчук",
+            "city": "",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/Pinchuk-Valeriya-e1504774554211-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [37.802850, 48.015883]
+        }
+
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Олександр Резенчук",
+            "city": "Тернопіль",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/000020-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [25.594767, 49.553517]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {
+            "name": "Ірина Яворська",
+            "city": "Ходорів",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/19961338_1718062258497823_8309292523706832626_n-e1504770510430-300x300.jpg",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [24.307978, 49.407774]
+        }
+    },
+	{
+        "type": "Feature",
+        "properties": {
+            "name": "Дмитро Ясько",
+            "city": "Полтава",
+            "icon_url": "",
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [34.551417, 49.588267]
+        }
+    },
+    {
+        "type": "Feature",
+        "properties": {
+            "name": "Ганна Чорнобровкіна",
+            "city": "Вінниця",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/DSC_0174-e1504770366885-300x300.jpg",
+
+            "show_on_map": true
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [28.468217, 49.233083]
+        }
+
+    }
+];
+
 var layerOfStudents2016 = [{
         "type": "Feature",
         "properties": {
@@ -1013,7 +1300,10 @@ var univercitiesMap = new L.markerClusterGroup({
     showCoverageOnHover: false,
     zoomToBoundsOnClick: true
 });
-
+var students2017Map = new L.markerClusterGroup({
+    showCoverageOnHover: false,
+    zoomToBoundsOnClick: true
+});
 var students2016Map = new L.markerClusterGroup({
     showCoverageOnHover: false,
     zoomToBoundsOnClick: true
@@ -1040,6 +1330,14 @@ mymap.addLayer(allStudents);
 var univercityLocation = L.geoJSON(univercities, {
     onEachFeature: onEachFeature,
 }).addTo(univercitiesMap);
+
+L.geoJSON(layerOfStudents2017, {
+    style: customStyle,
+    onEachFeature: onEachFeature,
+    pointToLayer: function(feature, latlng) {
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+    }
+}).addTo(students2017Map).addTo(allStudents);
 
 L.geoJSON(layerOfStudents2016, {
     style: customStyle,
@@ -1078,6 +1376,7 @@ L.geoJSON(layerOfStudents2013, {
 
 //Implementing layer control
 var baseMaps = {
+   "Набір 2017": students2017Map,
     "Набір 2016": students2016Map,
     "Набір 2015": students2015Map,
     "Набір 2014": students2014Map,
