@@ -107,20 +107,6 @@ var layerOfStudents2017 = [{
     {
         "type": "Feature",
         "properties": {
-            "name": "Ліза Александрович",
-            "city": "Львів",
-            "icon_url": "https://github.com/Aeternia-ua/Mediastudents-geography/blob/master/img/2016/IMG_8072-e1471388652263-100x100.jpg?raw=true",
-            "show_on_map": true
-        },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [24.029717, 49.839683]
-        }
-
-    },
-    {
-        "type": "Feature",
-        "properties": {
             "name": "Яромир Делікатний",
             "city": "Львів",
             "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IMG_20160307_133418-e1504774808554-300x300.jpg",
@@ -151,7 +137,7 @@ var layerOfStudents2017 = [{
         "properties": {
             "name": "Євгеній Домашин",
             "city": "Полтава",
-            "icon_url": "",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/22052619_1417658391675069_1648574979_n-e1506454816640.jpg",
             "show_on_map": true
         },
         "geometry": {
@@ -220,13 +206,13 @@ var layerOfStudents2017 = [{
         "type": "Feature",
         "properties": {
             "name": "Марія Кочуренко",
-            "city": "Миколаїв",
-            "icon_url": "",
+            "city": "Одеса",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/kochurenko-e1506079206629-300x300.jpg",
             "show_on_map": true
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [31.994583, 46.975033]
+            "coordinates": [30.723310, 46.482526]
         }
 
     },
@@ -248,26 +234,26 @@ var layerOfStudents2017 = [{
         "type": "Feature",
         "properties": {
             "name": "Ірина Павленко",
-            "city": "Одеса",
-            "icon_url": "",
+            "city": "Житомир",
+            "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/IPavlenko-e1506588957760-300x300.jpg",
             "show_on_map": true
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [30.723310, 46.482526]
+            "coordinates": [28.658667, 50.254650]
         }
     },
     {
         "type": "Feature",
         "properties": {
             "name": "Валерія Пінчук",
-            "city": "",
+            "city": "Бровари",
             "icon_url": "http://media.ucu.edu.ua/wp-content/uploads/2017/09/Pinchuk-Valeriya-e1504774554211-300x300.jpg",
             "show_on_map": true
         },
         "geometry": {
             "type": "Point",
-            "coordinates": [37.802850, 48.015883]
+            "coordinates": [30.790900, 50.511083]
         }
 
     },
@@ -302,7 +288,7 @@ var layerOfStudents2017 = [{
         "properties": {
             "name": "Дмитро Ясько",
             "city": "Полтава",
-            "icon_url": "",
+            "icon_url": "https://raw.githubusercontent.com/Aeternia-ua/Mediastudents-geography/master/img/2017/DMYasko.jpg",
             "show_on_map": true
         },
         "geometry": {
